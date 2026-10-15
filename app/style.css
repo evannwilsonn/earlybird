@@ -1,0 +1,84 @@
+/* A teacher's gradebook: cream paper, ruled lines, ink-blue type, a red pen for risk. */
+:root {
+  --paper: #fbf8f1;
+  --rule: #e4ddcd;
+  --ink: #1d2433;
+  --ink-soft: #5b6375;
+  --blue: #1f4e8c;
+  --red: #c0392b;
+  --amber: #b7791f;
+  --green: #2e7d4f;
+}
+body { background: var(--paper); color: var(--ink); }
+h1, h2 { font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif; letter-spacing: -0.01em; }
+h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 .35rem; }
+.hint { color: var(--ink-soft); font-size: .88rem; margin: .1rem 0 .6rem; }
+
+.masthead {
+  display: flex; flex-wrap: wrap; gap: .75rem 2rem; align-items: center; justify-content: space-between;
+  padding: 1.1rem 1.5rem .9rem; border-bottom: 2px solid var(--ink);
+  background: repeating-linear-gradient(var(--paper) 0 27px, var(--rule) 27px 28px);
+}
+.masthead h1 { font-size: 1.9rem; font-weight: 800; margin: 0; color: var(--blue); }
+.masthead p { margin: 0; color: var(--ink-soft); }
+/* The moment picker: the three radio buttons drawn as one segmented pill. */
+.masthead .shiny-input-container { margin: 0; width: auto !important; }
+.masthead .shiny-options-group { display: inline-flex; flex-wrap: nowrap; border: 1.5px solid var(--ink); border-radius: 999px; overflow: hidden; background: #fff; }
+.masthead .shiny-options-group label { position: relative; margin: 0 !important; padding: 0 !important; }
+.masthead .shiny-options-group input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.masthead .shiny-options-group span {
+  display: block; padding: .45rem 1rem; font-family: "Avenir Next", "Segoe UI", sans-serif;
+  font-weight: 600; font-size: .9rem; white-space: nowrap;
+}
+.masthead .shiny-options-group input:checked + span { background: var(--ink); color: var(--paper); }
+.masthead .shiny-options-group input:focus-visible + span { outline: 2px solid var(--blue); outline-offset: -3px; }
+
+.body { min-height: 0; }
+.inputs { padding: 1rem 1.25rem 2rem; border-right: 1px solid var(--rule); overflow-y: auto; }
+.inputs-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .25rem; }
+.inputs-head h2 { margin: 0; }
+.sample-note { margin: .4rem 0 .8rem; padding: .5rem .7rem; border-left: 3px solid var(--blue); background: #eef3fa; font-size: .9rem; }
+.accordion { --bs-accordion-bg: transparent; --bs-accordion-border-color: var(--rule); }
+.accordion-button { font-family: "Avenir Next", "Segoe UI", sans-serif; font-weight: 600; padding: .65rem .2rem; background: transparent !important; box-shadow: none !important; }
+.accordion-body { padding: .3rem .2rem .9rem; }
+.form-label, .control-label { font-size: .88rem; font-weight: 600; margin-bottom: .2rem; }
+.shiny-input-container { margin-bottom: .7rem; width: 100% !important; }
+
+.results { padding: 1rem 1.5rem 2rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; }
+.panel { border-top: 1px solid var(--rule); padding-top: .9rem; }
+
+.grade-card { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; padding: 1.1rem 1.3rem; border: 2px solid var(--ink); border-radius: 8px; background: #fff; }
+.grade-card.danger { border-color: var(--red); }
+.grade-card.warning { border-color: var(--amber); }
+.grade .num { font-size: 3.6rem; font-weight: 800; line-height: 1; font-family: "Avenir Next", "Segoe UI", sans-serif; font-variant-numeric: tabular-nums; }
+.grade-card.danger .num { color: var(--red); }
+.grade .out { font-size: 1.2rem; color: var(--ink-soft); margin-left: .25rem; }
+.grade .range { color: var(--ink-soft); font-size: .9rem; margin-top: .2rem; }
+.verdict { flex: 1 1 16rem; }
+.verdict p { margin: .35rem 0 0; }
+.badge { font-size: .85rem; letter-spacing: .03em; }
+.text-bg-warning { background: var(--amber) !important; color: #fff !important; }
+
+.bars { display: grid; gap: .35rem; }
+.bar-row { display: grid; grid-template-columns: minmax(8rem, 12rem) 1fr 3rem; align-items: center; gap: .6rem; font-size: .9rem; }
+.bar-track { position: relative; height: 14px; background: linear-gradient(90deg, transparent calc(50% - 1px), var(--ink-soft) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)); }
+.bar { position: absolute; top: 2px; height: 10px; border-radius: 2px; }
+.bar.up { background: var(--green); }
+.bar.down { background: var(--red); }
+.bar-value { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+
+.record { --bs-table-bg: transparent; font-size: .92rem; margin-bottom: .3rem; }
+.record th { font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-soft); }
+.record td { font-variant-numeric: tabular-nums; }
+.record tr.current td { font-weight: 700; background: #eef3fa; }
+.notes ul { padding-left: 1.1rem; color: var(--ink-soft); font-size: .9rem; display: grid; gap: .4rem; }
+
+@media (max-width: 991px) {
+  /* On a phone the prediction comes first; the form follows. */
+  .body > .bslib-grid-item:has(> .results) { order: -1; }
+  .results { padding-bottom: 1rem; }
+  .inputs { border-right: 0; border-top: 2px solid var(--ink); }
+  .masthead { padding: .9rem 1rem .8rem; }
+  .masthead .shiny-options-group span { padding: .4rem .7rem; font-size: .82rem; }
+  .bar-row { grid-template-columns: 7.5rem 1fr 2.6rem; }
+}

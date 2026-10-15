@@ -1,0 +1,452 @@
+{
+  "cv": [
+    {
+      "moment": "start",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "baseline",
+      "rmse": 2.940889,
+      "rmse_se": 0.07683
+    },
+    {
+      "moment": "start",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "ols_scratch",
+      "rmse": 2.564278,
+      "rmse_se": 0.066685
+    },
+    {
+      "moment": "start",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "linear",
+      "rmse": 2.564278,
+      "rmse_se": 0.066685
+    },
+    {
+      "moment": "start",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "elastic_net",
+      "rmse": 2.53614,
+      "rmse_se": 0.065422
+    },
+    {
+      "moment": "start",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "random_forest",
+      "rmse": 2.453227,
+      "rmse_se": 0.077915
+    },
+    {
+      "moment": "start",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "boosted_trees",
+      "rmse": 2.468698,
+      "rmse_se": 0.075967
+    },
+    {
+      "moment": "start",
+      "drop_sensitive": false,
+      "engineered": true,
+      "model": "elastic_net",
+      "rmse": 2.517775,
+      "rmse_se": 0.064106
+    },
+    {
+      "moment": "start",
+      "drop_sensitive": true,
+      "engineered": false,
+      "model": "elastic_net",
+      "rmse": 2.528466,
+      "rmse_se": 0.067952
+    },
+    {
+      "moment": "start",
+      "drop_sensitive": true,
+      "engineered": true,
+      "model": "elastic_net",
+      "rmse": 2.511832,
+      "rmse_se": 0.066903
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "baseline",
+      "rmse": 1.573062,
+      "rmse_se": 0.046421
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "ols_scratch",
+      "rmse": 1.416839,
+      "rmse_se": 0.049478
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "linear",
+      "rmse": 1.416839,
+      "rmse_se": 0.049478
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "elastic_net",
+      "rmse": 1.399846,
+      "rmse_se": 0.046225
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "random_forest",
+      "rmse": 1.403396,
+      "rmse_se": 0.033058
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "boosted_trees",
+      "rmse": 1.344104,
+      "rmse_se": 0.040183
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": false,
+      "engineered": true,
+      "model": "elastic_net",
+      "rmse": 1.395115,
+      "rmse_se": 0.045469
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": true,
+      "engineered": false,
+      "model": "elastic_net",
+      "rmse": 1.402059,
+      "rmse_se": 0.046247
+    },
+    {
+      "moment": "term1",
+      "drop_sensitive": true,
+      "engineered": true,
+      "model": "elastic_net",
+      "rmse": 1.398683,
+      "rmse_se": 0.045525
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "baseline",
+      "rmse": 0.986966,
+      "rmse_se": 0.059865
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "ols_scratch",
+      "rmse": 0.920843,
+      "rmse_se": 0.060762
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "linear",
+      "rmse": 0.920843,
+      "rmse_se": 0.060762
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "elastic_net",
+      "rmse": 0.906246,
+      "rmse_se": 0.060857
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "random_forest",
+      "rmse": 0.923266,
+      "rmse_se": 0.060073
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": false,
+      "engineered": false,
+      "model": "boosted_trees",
+      "rmse": 0.918244,
+      "rmse_se": 0.060995
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": false,
+      "engineered": true,
+      "model": "elastic_net",
+      "rmse": 0.902245,
+      "rmse_se": 0.059953
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": true,
+      "engineered": false,
+      "model": "elastic_net",
+      "rmse": 0.905893,
+      "rmse_se": 0.060542
+    },
+    {
+      "moment": "term2",
+      "drop_sensitive": true,
+      "engineered": true,
+      "model": "elastic_net",
+      "rmse": 0.901884,
+      "rmse_se": 0.059965
+    }
+  ],
+  "test": [
+    {
+      "variant": "start",
+      "model": "boosted_trees",
+      "rmse": 2.296955,
+      "mae": 1.831243,
+      "rsq": 0.31644,
+      "at_risk_recall": 0.333333,
+      "at_risk_precision": 0.423077
+    },
+    {
+      "variant": "start",
+      "model": "elastic_net",
+      "rmse": 2.308143,
+      "mae": 1.884938,
+      "rsq": 0.307114,
+      "at_risk_recall": 0.30303,
+      "at_risk_precision": 0.5
+    },
+    {
+      "variant": "start",
+      "model": "random_forest",
+      "rmse": 2.320973,
+      "mae": 1.875879,
+      "rsq": 0.299751,
+      "at_risk_recall": 0.272727,
+      "at_risk_precision": 0.333333
+    },
+    {
+      "variant": "start",
+      "model": "linear",
+      "rmse": 2.350046,
+      "mae": 1.911123,
+      "rsq": 0.295105,
+      "at_risk_recall": 0.393939,
+      "at_risk_precision": 0.5
+    },
+    {
+      "variant": "start",
+      "model": "baseline",
+      "rmse": 2.775391,
+      "mae": 2.268657,
+      "at_risk_recall": 0
+    },
+    {
+      "variant": "start_engineered",
+      "model": "elastic_net",
+      "rmse": 2.281872,
+      "mae": 1.847054,
+      "rsq": 0.323083,
+      "at_risk_recall": 0.333333,
+      "at_risk_precision": 0.5
+    },
+    {
+      "variant": "start_nosensitive",
+      "model": "elastic_net",
+      "rmse": 2.291816,
+      "mae": 1.887206,
+      "rsq": 0.317097,
+      "at_risk_recall": 0.333333,
+      "at_risk_precision": 0.55
+    },
+    {
+      "variant": "start_nosensitive_engineered",
+      "model": "elastic_net",
+      "rmse": 2.266178,
+      "mae": 1.841562,
+      "rsq": 0.332435,
+      "at_risk_recall": 0.363636,
+      "at_risk_precision": 0.521739
+    },
+    {
+      "variant": "term1",
+      "model": "random_forest",
+      "rmse": 1.228434,
+      "mae": 0.988406,
+      "rsq": 0.810364,
+      "at_risk_recall": 0.727273,
+      "at_risk_precision": 0.6
+    },
+    {
+      "variant": "term1",
+      "model": "elastic_net",
+      "rmse": 1.250737,
+      "mae": 0.992449,
+      "rsq": 0.802668,
+      "at_risk_recall": 0.727273,
+      "at_risk_precision": 0.55814
+    },
+    {
+      "variant": "term1",
+      "model": "boosted_trees",
+      "rmse": 1.255015,
+      "mae": 1.0059,
+      "rsq": 0.800129,
+      "at_risk_recall": 0.727273,
+      "at_risk_precision": 0.571429
+    },
+    {
+      "variant": "term1",
+      "model": "linear",
+      "rmse": 1.257034,
+      "mae": 0.988245,
+      "rsq": 0.798507,
+      "at_risk_recall": 0.787879,
+      "at_risk_precision": 0.604651
+    },
+    {
+      "variant": "term1",
+      "model": "baseline",
+      "rmse": 1.363856,
+      "mae": 1.010363,
+      "rsq": 0.784543,
+      "at_risk_recall": 0.757576,
+      "at_risk_precision": 0.543478
+    },
+    {
+      "variant": "term1_engineered",
+      "model": "elastic_net",
+      "rmse": 1.252853,
+      "mae": 0.996066,
+      "rsq": 0.801943,
+      "at_risk_recall": 0.727273,
+      "at_risk_precision": 0.571429
+    },
+    {
+      "variant": "term1_nosensitive",
+      "model": "elastic_net",
+      "rmse": 1.252971,
+      "mae": 0.993421,
+      "rsq": 0.801912,
+      "at_risk_recall": 0.727273,
+      "at_risk_precision": 0.585366
+    },
+    {
+      "variant": "term1_nosensitive_engineered",
+      "model": "elastic_net",
+      "rmse": 1.254315,
+      "mae": 0.99528,
+      "rsq": 0.801407,
+      "at_risk_recall": 0.727273,
+      "at_risk_precision": 0.571429
+    },
+    {
+      "variant": "term2",
+      "model": "linear",
+      "rmse": 0.825649,
+      "mae": 0.671228,
+      "rsq": 0.911294,
+      "at_risk_recall": 0.848485,
+      "at_risk_precision": 0.636364
+    },
+    {
+      "variant": "term2",
+      "model": "boosted_trees",
+      "rmse": 0.831259,
+      "mae": 0.648926,
+      "rsq": 0.911082,
+      "at_risk_recall": 0.818182,
+      "at_risk_precision": 0.627907
+    },
+    {
+      "variant": "term2",
+      "model": "elastic_net",
+      "rmse": 0.836099,
+      "mae": 0.674342,
+      "rsq": 0.909416,
+      "at_risk_recall": 0.818182,
+      "at_risk_precision": 0.613636
+    },
+    {
+      "variant": "term2",
+      "model": "random_forest",
+      "rmse": 0.840746,
+      "mae": 0.656267,
+      "rsq": 0.908328,
+      "at_risk_recall": 0.818182,
+      "at_risk_precision": 0.627907
+    },
+    {
+      "variant": "term2",
+      "model": "baseline",
+      "rmse": 0.949502,
+      "mae": 0.65285,
+      "rsq": 0.898224,
+      "at_risk_recall": 0.818182,
+      "at_risk_precision": 0.6
+    },
+    {
+      "variant": "term2_engineered",
+      "model": "elastic_net",
+      "rmse": 0.846093,
+      "mae": 0.679092,
+      "rsq": 0.907247,
+      "at_risk_recall": 0.818182,
+      "at_risk_precision": 0.613636
+    },
+    {
+      "variant": "term2_nosensitive",
+      "model": "elastic_net",
+      "rmse": 0.841786,
+      "mae": 0.676388,
+      "rsq": 0.908201,
+      "at_risk_recall": 0.818182,
+      "at_risk_precision": 0.613636
+    },
+    {
+      "variant": "term2_nosensitive_engineered",
+      "model": "elastic_net",
+      "rmse": 0.847021,
+      "mae": 0.679837,
+      "rsq": 0.906991,
+      "at_risk_recall": 0.818182,
+      "at_risk_precision": 0.613636
+    }
+  ],
+  "ols_vs_lm": 2.095546e-14,
+  "absent": [
+    {
+      "n": 53,
+      "share": 0.050766,
+      "mean_G1": 7.396226,
+      "mean_G2": 4.415094
+    }
+  ],
+  "rows": {
+    "train": 798,
+    "test": 193
+  },
+  "students": {
+    "total": 662
+  }
+}
