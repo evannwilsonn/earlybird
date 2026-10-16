@@ -6,7 +6,7 @@ points in the year: before any grades exist, after the first term, and after the
 second. It's built in R with tidymodels and ships as a Shiny app that shows the
 prediction, the chance of failing, and which answers moved it.
 
-**[Live demo](https://evannwilsonn.github.io/earlybird/)** (runs entirely in your browser through Shinylive; the first load takes a few seconds)
+**Try it:** [quick version](https://evannwilsonn.github.io/earlybird/quick/) (one page, opens instantly) or the [full R app](https://evannwilsonn.github.io/earlybird/) (the Shiny app running in your browser through Shinylive; the first load takes a few seconds)
 
 ![Earlybird showing a start-of-year prediction](screenshot.png)
 
@@ -170,6 +170,13 @@ in `app/predict.R`. `analysis/run.R` checks the export against the tidymodels
 workflow on every test row (they agree to 10⁻¹⁴) and refuses to save it otherwise.
 That lets Shinylive run the whole app in the browser with only shiny and bslib.
 
+The same exported numbers also drive a one-page version with no R at all (`web/`).
+`web/export_json.R` writes the models and held-out students to JSON, `web/build.py`
+inlines them into `web/template.html`, and the page runs the prediction in about 20
+lines of JavaScript. It matches the R predictions to 4 decimal places. It adds one
+view the Shiny app doesn't have: the forecast at all three points in the year on one
+scale, so you can watch the likely range close in as each term's grade arrives.
+
 ## What I'd be careful about
 
 - The data is two schools in one country in 2005–06. Grading scales, what counts as
@@ -190,6 +197,7 @@ app/app.R          Shiny app (shiny + bslib only)
 app/predict.R      prediction and per-answer contributions in base R
 app/model.rds      exported models, written by analysis/run.R
 app/heldout.csv    the held-out students, for "load a real student"
+web/               the one-page JavaScript version (template, JSON export, build script)
 results/           cv.csv, test.csv, metrics.json
 tests/testthat/    data, split, leakage, OLS vs lm, export arithmetic
 ```
